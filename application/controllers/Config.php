@@ -841,7 +841,7 @@ class Config extends Secure_Controller
 	
 	private function _check_encryption()
 	{
-		$encryption_key = $this->config->item('encryption_key');
+		$encryption_key = $this->encryption->create_key(32);;
 		
 		// check if the encryption_key config item is the default one
 		if($encryption_key == '' || $encryption_key == 'YOUR KEY')

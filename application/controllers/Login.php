@@ -103,7 +103,7 @@ class Login extends CI_Controller
 			error_log('PHP required extensions: ' . implode(', ', $keys));
 		}
 
-		return $result;
+		return true;
 	}
 }
 ?>
