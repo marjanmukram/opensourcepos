@@ -110,7 +110,6 @@
 	};
 
 	var table = function() {
-		return $("#table").data('bootstrap.table');
 	}
 
 	var selected_ids = function () {
@@ -212,7 +211,7 @@
 			search: options.resource || false,
 			showColumns: true,
 			clickToSelect: true,
-			showExport: true,
+			showExport: false,
 			exportDataType: 'all',
 			exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
 			exportOptions: {
